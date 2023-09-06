@@ -1,0 +1,44 @@
+{
+  "manifest_version": 3,
+  "name": " LCAP Copilot",
+  "description": "NetEase LCAP 研发效能插件",
+  "icons": {
+    "16": "assets/icon-16.png",
+    "32": "assets/icon-32.png",
+    "48": "assets/icon-48.png",
+    "128": "assets/icon-128.png"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "http://*.ha.test.com/designer/app?appId=*",
+        "*://*.163yun.com/designer/app?appId=*",
+        "*://*.163.com/designer/app?appId=*"
+      ],
+      "js": [
+        "contentScript.bundle.js"
+      ]
+    }
+  ],
+  "background": {
+    "service_worker": "background.bundle.js"
+  },
+  "devtools_page": "devtools.html",
+  "permissions": [
+    "activeTab",
+    "storage",
+    "tabs"
+  ],
+  "web_accessible_resources": [
+    {
+      "matches": [
+        "http://*.ha.test.com/*",
+        "*://*.163yun.com/*",
+        "*://*.163.com/*"
+      ],
+      "resources": [
+        "injectScript.bundle.js"
+      ]
+    }
+  ]
+}
