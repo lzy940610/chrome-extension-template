@@ -76,16 +76,10 @@ pnpm build
 
 ## 🤝 协作文档链接
 
-- [前端技术文档](https://docs.popo.netease.com/lingxi/11f7648328aa41eab248a203275e1047)
-
-关于 Sentry 部分需要自行写入
-
-## 📜 许可协议
-
-本插件只供网易公司内部使用，未经明确授权，不得用于公司外部的任何商业或非商业用途。具体协议细节和权限限制请参阅随附件中的许可协议文件，或直接与我们的法务团队联系。
+- 具体上报到那个服务取决于你的调用方式 我这里采用是 Sentry + Grafana （数据展示）用作实例
 
 ## 🙋‍♂️ 联系与支持
 
 如有任何问题或需进一步协助，请通过以下电子邮件与我联系：
 
-[lizhenyu04@corp.netease.com](mailto:lizhenyu04@corp.netease.com)
+[lizhenyu0610@gmail.com](mailto:lizhenyu0610@gmail.com)
